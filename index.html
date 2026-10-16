@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Mess Around</title>
+</head>
+
+<body>
+    <h1>Let's learn JavaScript</h1>
+    <h2>Let's learn about onclick and alerts</h2>
+
+    <a href="https://www.youtube.com" onclick="alert('Warning! You are about to leave the page!')">YouTube</a>
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity?</h2>
+
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='I have a big brain, I am Megamind';
+    document.getElementById('secret').style.display='block';">Reveal!
+    </button>
+
+    <button onclick="document.getElementById('secret').style.display='none';">
+        Hide
+    </button>
+
+    <h2>How do I change an image in JavaScript?</h2>
+    <img src="images/lit.jpg" id="myimage" style="height:200px; width:200px;">
+    <button onclick="document.getElementById('myimage').src='images/unlit.jpg';">
+        Bulb Off!
+    </button>
+    <!-- Student challenge: make a "Bulb On!" button -->
+    <button onclick="document.getElementById('myimage').src='images/lit.jpg';">
+        Bulb On!
+    </button>
+
+    <h2>How do we change styles with buttons?</h2>
+    <p id="alice">Hi, I am Alice</p>
+
+    <button onclick="document.getElementById('alice').style.color='blue';
+    document.getElementById('alice').style.fontSize='5px';">
+
+        Cake - Eat Me!
+    </button>
+
+    <button onclick="document.getElementById('alice').style.color='red';
+    document.getElementById('alice').style.fontSize='50px';">
+        Potion - Drink Me!
+    </button>
+
+    <p id="colors">This Highlights Text</p>
+
+    <button onclick="document.getElementById('colors').style.backgroundColor='yellow';">
+        Highlight the Text!
+    </button>
+
+    <button onclick="document.getElementById('colors').style.backgroundColor='white';">
+        Hide the Highlight!
+    </button>
+
+    <h2>How do we enlargen images with buttons?</h2>
+    <p>This enlargens the image!</p>
+    <img src="images/kyrie.jpg" id="kyrieImage" style="height:200px; width:200px;">
+
+    <button
+        onclick="document.getElementById('kyrieImage').style.height='400px'; document.getElementById('kyrieImage').style.width='400px';">
+        Enlarge!
+    </button>
+
+    <button
+        onclick="document.getElementById('kyrieImage').style.height='200px'; document.getElementById('kyrieImage').style.width='200px';">
+        Normal Size!
+    </button>
+
+</body>
+
+</html>
